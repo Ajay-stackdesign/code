@@ -1,0 +1,25 @@
+@mixin create {
+  box-sizing: border-box;
+  padding: 1vmax 2vmax;
+  width: 80%;
+  border-radius: 40px;
+  border: 1px solid #ccc;
+  margin: 2vmax;
+  font: 100 1.2rem "Roboto", sans-serif;
+  outline: none;
+}
+
+form {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 30vh;
+  margin-top: 100px;
+  .text {
+    @include create();
+  }
+  button {
+    @include create();
+    width: 20%;
+  }
+}
